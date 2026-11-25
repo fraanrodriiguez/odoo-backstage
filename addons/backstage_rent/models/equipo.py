@@ -21,3 +21,4 @@ class Equipo(models.Model):
     notas = fields.Text(string="Notas")
     # Extra:
     active = fields.Boolean(string="Activo", default="True")
+    imagen = fields.Image(string='Foto', max_width=1024, max_height=1024)
